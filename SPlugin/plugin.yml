@@ -7,23 +7,23 @@ commands:
  site:
     description: Afficher le lien du site
     usage: /<command>
-    permission: splugin.essentials.site
+    permission: splugin.link.site
  vote:
     description: Afficher le lien pour voter
     usage: /<command>
-    permission: splugin.essentials.vote
+    permission: splugin.link.vote
  boutique:
     description: Afficher le lien de la boutique
     usage: /<command>
-    permission: splugin.essentials.boutique
+    permission: splugin.link.boutique
  forum:
     description: Afficher le lien du forum
     usage: /<command>
-    permission: splugin.essentials.forum
+    permission: splugin.link.forum
  ts:
     description: Afficher l'adresse du teamspeak
     usage: /<command>
-    permission: splugin.essentials.tp
+    permission: splugin.link.ts
  help:
     description: Afficher l'aide
     usage: /<command>
