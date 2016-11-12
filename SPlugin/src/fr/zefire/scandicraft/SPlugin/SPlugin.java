@@ -12,6 +12,8 @@ import fr.zefire.scandicraft.SPlugin.commands.essentials.SpawnCommand;
 
 public class SPlugin extends JavaPlugin implements Listener {
 	static SPlugin instance;
+	
+	//coucou c'est moi
 
 	public void onEnable() {
 		instance = this;
