@@ -1,0 +1,32 @@
+main: fr.zefire.scandicraft.Main    
+name: SPlugin
+author: ZeFiRe_
+version: 1.0
+commands:
+ site:
+    description: afficher le lien du site
+    usage: /<command>
+ vote:
+    description: afficher le lien pour voter
+    usage: /<command>
+ boutique:
+    description: afficher le lien de la boutique
+    usage: /<command>
+ forum:
+    description: afficher le lien du forum
+    usage: /<command>
+ ts:
+    description: afficher l'adresse du teamspeak
+    usage: /<command>
+ help:
+    description: afficher l'aide
+    usage: /<command>
+ broadcast:
+    description: envoyer un message sur tout le serveur
+    usage: /<command>
+ gm:
+    description: changer votre gamemode
+    usage: /<command>
+ spawn:
+    description: changer votre gamemode
+    usage: /<command>

@@ -1,0 +1,8 @@
+location:
+  spawn:
+    x: 0.5
+    y: 90
+    z: 0.5
+    worldName: world
+teleport-spawn-message: "&bVous avez été téléporté au spawn"
+teleport-setspawn-message: "&bVous avez changé le point de spawn"
