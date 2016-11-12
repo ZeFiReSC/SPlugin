@@ -1,32 +1,57 @@
-main: fr.zefire.scandicraft.Main    
+main: fr.zefire.scandicraft.SPlugin.SPlugin 
 name: SPlugin
 author: ZeFiRe_
+authors: [Pelt10, TheKinrar] 
 version: 1.0
 commands:
  site:
-    description: afficher le lien du site
+    description: Afficher le lien du site
     usage: /<command>
+    permission: splugin.essentials.site
  vote:
-    description: afficher le lien pour voter
+    description: Afficher le lien pour voter
     usage: /<command>
+    permission: splugin.essentials.vote
  boutique:
-    description: afficher le lien de la boutique
+    description: Afficher le lien de la boutique
     usage: /<command>
+    permission: splugin.essentials.boutique
  forum:
-    description: afficher le lien du forum
+    description: Afficher le lien du forum
     usage: /<command>
+    permission: splugin.essentials.forum
  ts:
-    description: afficher l'adresse du teamspeak
+    description: Afficher l'adresse du teamspeak
     usage: /<command>
+    permission: splugin.essentials.tp
  help:
-    description: afficher l'aide
+    description: Afficher l'aide
     usage: /<command>
+    permission: splugin.essentials.help
  broadcast:
-    description: envoyer un message sur tout le serveur
+    description: Envoyer un message sur tout le serveur
     usage: /<command>
+    permission: splugin.essentials.broadcast
  gm:
-    description: changer votre gamemode
+    description: Changer votre gamemode
     usage: /<command>
+    permission: splugin.essentials.gm
  spawn:
-    description: changer votre gamemode
+    description: Changer votre gamemode
     usage: /<command>
+    permission: splugin.essentials.spawn
+permissions:
+  splugin.*:
+    description: Gives access to all SPlugin commands
+    children:
+        splugin.essentials.broadcast: true
+        splugin.essentials.gm: true
+  splugin.essentials.broadcast:
+    description: Allow to use broadcast command
+    default: op
+  splugin.essentials.gm:
+    description: Allow to use gm command
+    default: op
+  splugin.essentials.setspawn:
+    description: Allow to use spawn set command
+    default: op
