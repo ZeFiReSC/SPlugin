@@ -3,6 +3,8 @@ location:
     x: 0.5
     y: 90
     z: 0.5
+    yaw: 0
+    pitch: 0
     worldName: world
-teleport-spawn-message: "&bVous avez Ã©tÃ© tÃ©lÃ©portÃ© au spawn"
-teleport-setspawn-message: "&bVous avez changÃ© le point de spawn"
+teleport-spawn-message: "&bVous avez été téléporté au spawn"
+teleport-setspawn-message: "&bVous avez changé le point de spawn"

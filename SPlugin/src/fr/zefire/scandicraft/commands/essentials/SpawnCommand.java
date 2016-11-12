@@ -34,9 +34,11 @@ public class SpawnCommand implements CommandExecutor {
 				double x = config.getDouble("location.spawn.x");
 				double y = config.getDouble("location.spawn.y");
 				double z = config.getDouble("location.spawn.z");
+				float yaw = (float) config.getDouble("location.spawn.yaw");
+				float pitch = (float) config.getDouble("location.spawn.pitch");
 				String monde = config.getString("location.spawn.worldName");
 				World world = Bukkit.getWorld(monde);
-				p.teleport(new Location(world, x, y, z));
+				p.teleport(new Location(world, x, y, z, yaw, pitch));
 			}
 			
 			if(args.length == 1){
@@ -46,11 +48,15 @@ public class SpawnCommand implements CommandExecutor {
 					double x = p.getLocation().getX();
 					double y = p.getLocation().getY();
 					double z = p.getLocation().getZ();
+					float yaw = p.getLocation().getYaw();
+					float pitch = p.getLocation().getPitch();
 					String monde = p.getWorld().getName();
 					
 					config.set("location.spawn.x", x);
 					config.set("location.spawn.y", y);
 					config.set("location.spawn.z", z);
+					config.set("location.spawn.yaw", yaw);
+					config.set("location.spawn.pitch", pitch);
 					config.set("location.spawn.worldName", monde);
 					pl.saveConfig();
 				}
