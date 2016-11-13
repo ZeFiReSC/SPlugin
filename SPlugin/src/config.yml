@@ -1,3 +1,5 @@
+#Fichier de Configuration
+
 location:
   spawn:
     x: 0.5
@@ -6,5 +8,13 @@ location:
     yaw: 0
     pitch: 0
     worldName: world
-teleport-spawn-message: "&bVous avez été téléporté au spawn"
-teleport-setspawn-message: "&bVous avez changé le point de spawn"
+
+messages:
+  essentials:
+    teleport-spawn-message: "&bVous avez été téléporté au spawn"
+    teleport-setspawn-message: "&bVous avez changé le point de spawn"
+  join-messages:
+    join: true
+    leave: true
+    first-join-message: false
+    

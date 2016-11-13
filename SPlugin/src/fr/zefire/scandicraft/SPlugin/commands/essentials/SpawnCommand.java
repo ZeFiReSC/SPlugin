@@ -26,7 +26,7 @@ public class SpawnCommand implements CommandExecutor {
 		Player player = (Player) sender;
 
 		if (args.length == 0) {
-			player.sendMessage(SPlugin.getInstance().formatInfo(config.getString("teleport-spawn-message").replace("&", "§")));
+			player.sendMessage(SPlugin.getInstance().formatInfo(config.getString("messages.essentials.teleport-spawn-message").replace("&", "§")));
 			double x = config.getDouble("location.spawn.x");
 			double y = config.getDouble("location.spawn.y");
 			double z = config.getDouble("location.spawn.z");
@@ -38,7 +38,7 @@ public class SpawnCommand implements CommandExecutor {
 		} else if (args.length == 1 && args[0].equalsIgnoreCase("set")) {
 			if(!player.hasPermission("splugin.essentials.setspawn"))
 				return true;
-			player.sendMessage(SPlugin.getInstance().formatInfo(config.getString("teleport-setspawn-message").replace("&", "§")));
+			player.sendMessage(SPlugin.getInstance().formatInfo(config.getString("messages.essentials.teleport-setspawn-message").replace("&", "§")));
 
 			double x = player.getLocation().getX();
 			double y = player.getLocation().getY();
@@ -55,7 +55,7 @@ public class SpawnCommand implements CommandExecutor {
 			config.set("location.spawn.worldName", world);
 			SPlugin.getInstance().saveConfig();
 		} else {
-			player.sendMessage(SPlugin.getInstance().formatCommandSyntaxeDisplay("/spawn [set]"));
+			player.sendMessage(SPlugin.getInstance().formatCommandSyntaxeDisplay("/spawn set"));
 		}
 
 		return true;
